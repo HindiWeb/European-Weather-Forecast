@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
+<meta charset="UTF-8">
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/master.css">
+<title>Weather Forcast API Project</title>
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1525858518389-d94ceaf36ac6?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .forecast-card {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+   <h2 class="text-center text-white mb-3">Weather forecast API Project</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h3 class="card-title text-center pb-2">European Weather Forecast</h3>
+          <form id="locationForm">
+            <div class="form-group">
+              <label for="locationSelect m-1">Select Location</label>
+              <select class="form-control" id="locationSelect">
+                <!-- Options will be populated using JavaScript -->
+              </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-block mt-4">Get Forecast</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mt-5 justify-content-center" id="forecastOutput" >
+    
+
+    </div>
+
+  </div>
+</body>
+
+<footer class="container text-center mt-2 text-white">
+    <div class="">
+        <p class="copyright-text dev">© Copyright 2024 <a href="Https://t.me/Devravi" ><span class="copyright-text color-magenta"> Deva Ram </span></a></p>
+        <!-- _______ -->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="section-divider col-md-6"><p><img src="images/divider.png" width="100%"></p></div>
+        </div>        
+    </div>
+
+    <div class="copyright-text code mb-2">
+        <div class="attr-img">
+            PNGs by <a href="https://www.vecteezy.com/free-png/divider" class="text-grey">Vecteezy</a> and <span class="text-grey">unsplash</span>
+        </div>
+        <div class="attr-img">
+            Powered by <a href="http://www.7timer.info/doc.php?lang=en" target= "_blank"  data-toggle="tooltip" data-placement="Top" title="Tap to visit 7Timer!" ><span class="keyword-magnet">7Timer!</span></a>
+        </div>        
+        <p class="attr-img copyright-text dev m-0 bg-3"> <a href="mailto:cmzu4lht@duck.com">Connect</a></p>
+
+    </code>
+</footer>
+
+<!-- Our codes -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main-utils.js"></script>
+<script src="js/main.js"></script>
+<!-- <script src="/Start/md5-assignment/js/bootstrap.min.js"></script> -->
+</html>
